@@ -26,15 +26,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putInt("scoreA", momScore);
-        outState.putInt("scoreB", dadScore);
+        outState.putInt(getString(R.string.scoreA), momScore);
+        outState.putInt(getString(R.string.scoreB), dadScore);
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        momScore = savedInstanceState.getInt("scoreA");
-        dadScore = savedInstanceState.getInt("scoreB");
+        momScore = savedInstanceState.getInt(getString(R.string.scoreA));
+        dadScore = savedInstanceState.getInt(getString(R.string.scoreB));
         displayForMom(momScore);
         displayForDad(dadScore);
     }

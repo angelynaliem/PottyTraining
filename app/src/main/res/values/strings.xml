@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Potty Training Score Keeper</string>
+    <string name="mom">Mom</string>
+    <string name="scoremom">0</string>
+    <string name="wetmom">Wet</string>
+    <string name="bmmom">BM</string>
+    <string name="accidentmom">Accident</string>
+    <string name="dad">Dad</string>
+    <string name="scoredad">0</string>
+    <string name="wetdad">Wet</string>
+    <string name="bmdad">BM</string>
+    <string name="accidentdad">Accident</string>
+    <string name="reset">Reset</string>
+    <string name="scoreA">scoreA</string>
+    <string name="scoreB">scoreB</string>
 </resources>

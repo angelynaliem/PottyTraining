@@ -10,7 +10,7 @@
     <RelativeLayout
         android:id="@+id/relative_layout_one"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@drawable/potty">
 
         <LinearLayout
@@ -26,66 +26,48 @@
                 android:orientation="vertical">
 
                 <TextView
+                    style="@style/Player"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:layout_marginTop="32dp"
-                    android:gravity="center_horizontal"
-                    android:text="Mom"
-                    android:textSize="31sp"
-                    android:textStyle="bold"
-                    android:textColor="#000000"
-                    android:fontFamily="cursive"/>
+                    android:text="@string/mom" />
 
                 <TextView
                     android:id="@+id/mom_score"
+                    style="@style/Score"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:text="0"
-                    android:textSize="56sp"
-                    android:textStyle="bold"
-                    android:textColor="#000000"/>
+                    android:text="@string/scoremom" />
 
                 <Button
+                    style="@style/Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="@dimen/eight"
+                    android:layout_marginTop="@dimen/twentyfour"
                     android:onClick="addOneWetMom"
-                    android:text="Wet"
-                    android:textColor="#000000"
-                    android:background="@color/colorPrimary"/>
+                    android:text="@string/wetmom" />
 
                 <Button
+                    style="@style/Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="@dimen/eight"
                     android:onClick="addTwoBmMom"
-                    android:text="BM"
-                    android:textColor="#000000"
-                    android:background="@color/colorPrimary"/>
+                    android:text="@string/bmmom" />
 
                 <Button
+                    style="@style/Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
                     android:onClick="loseOneMom"
-                    android:text="Accident"
-                    android:textColor="#000000"
-                    android:background="@color/colorPrimary"/>
+                    android:text="@string/accidentmom" />
 
             </LinearLayout>
 
             <View
-                android:layout_width="1dp"
+                android:layout_width="@dimen/one"
                 android:layout_height="match_parent"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="@dimen/thirtytwo"
                 android:background="@color/colorPrimaryDark">
 
             </View>
@@ -97,59 +79,41 @@
                 android:orientation="vertical">
 
                 <TextView
+                    style="@style/Player"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:layout_marginTop="32dp"
-                    android:gravity="center_horizontal"
-                    android:text="Dad"
-                    android:textSize="31sp"
-                    android:textStyle="bold"
-                    android:textColor="#000000"
-                    android:fontFamily="cursive"/>
+                    android:text="@string/dad" />
 
                 <TextView
                     android:id="@+id/dad_score"
+                    style="@style/Score"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:text="0"
-                    android:textSize="56sp"
-                    android:textStyle="bold"
-                    android:textColor="#000000"/>
+                    android:text="@string/scoredad" />
 
                 <Button
+                    style="@style/Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="@dimen/eight"
+                    android:layout_marginTop="@dimen/twentyfour"
                     android:onClick="addOneWetDad"
-                    android:text="Wet"
-                    android:textColor="#000000"
-                    android:background="@color/colorPrimary"/>
+                    android:text="@string/wetdad" />
 
                 <Button
+                    style="@style/Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="@dimen/eight"
                     android:onClick="addTwoBmDad"
-                    android:text="BM"
-                    android:textColor="#000000"
-                    android:background="@color/colorPrimary"/>
+                    android:text="@string/bmdad" />
 
                 <Button
+                    style="@style/Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
                     android:onClick="loseOneDad"
-                    android:text="Accident"
-                    android:textColor="#000000"
-                    android:background="@color/colorPrimary"/>
+                    android:text="@string/accidentdad" />
 
             </LinearLayout>
 
@@ -160,12 +124,12 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/horizontal_one"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="32dp"
-            android:layout_marginTop="180dp"
+            android:layout_marginBottom="@dimen/thirtytwo"
+            android:layout_marginTop="@dimen/oneeighty"
+            android:background="@color/colorPrimary"
             android:onClick="resetScore"
-            android:text="Reset"
-            android:textColor="#000000"
-            android:background="@color/colorPrimary"/>
+            android:text="@string/reset"
+            android:textColor="@color/colorPrimaryDark" />
 
     </RelativeLayout>
 
